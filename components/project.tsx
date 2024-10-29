@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image"
 import React, { useRef } from "react";
-import { projectsData } from '@/lib/data';
+import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
 
 
-export default function Project({ title, description, tags, imageUrl }:
+export default function Project({ title, description, tags, imageUrl,linkToProject  }:
     ProjectProps
 ) {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -24,13 +24,13 @@ export default function Project({ title, description, tags, imageUrl }:
         <motion.div ref={sectionRef}
 
             style={{
-                scale: scaleProgress ,
-                opacity:opacityProgress ,
+                scale: scaleProgress,
+                opacity: opacityProgress,
             }}
 
             className="group mb-3 sm:mb-8 last:mb-0 "
-            
-            >
+
+        >
             <section
 
                 className=" bg-black max-w-[42rem] border border-white/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 hover:bg-slate-900 transition group-even:pl-8">
@@ -45,8 +45,10 @@ export default function Project({ title, description, tags, imageUrl }:
                     </ul>
                 </div>
 
-                <Image src={imageUrl} alt="Project I worked on :)" quality={95}
-                    className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
+                <a href={ linkToProject } target="_blank" style={{ cursor: "pointer" }}>
+
+                    <Image src={imageUrl} alt="Project I worked on :)" quality={95}
+                        className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
                      group-hover:-translate-x-3
                      group-hover:scale-[1.04]
                      group-hover:translate-y-3
@@ -57,7 +59,13 @@ export default function Project({ title, description, tags, imageUrl }:
                      group-even:group-hover:-rotate-2     
                     group-even:right-[initial] group-even:-left-40"
 
-                />
+                    />
+
+
+
+                </a>
+
+
             </section>
         </motion.div>
     )

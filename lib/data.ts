@@ -58,25 +58,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Personal Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A smooth and responsive personal Portfolio website build using Typescript and Next.js.",
+    tags: ["Next.js","TypeScript","Framer Motion","Context API"],
     imageUrl: corpcommentImg,
+    linkToProject : "https://swastikapradhan.vercel.app/"
   },
   {
-    title: "rmtDev",
+    title: "ChatKro",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "This application allows users to chat with each other in real time and check the online status of their friends.",
+    tags: ["React", "Tailwind", "Redux","MongoDB","JWT/AUTH"],
     imageUrl: rmtdevImg,
+    linkToProject:"https://github.com/SwastikaPradhan/ChartKro"
   },
   {
-    title: "Word Analytics",
+    title: "Eco Mines",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "An application designed to empower India's coal sector by providing an interactive dashboard for data visualization and decision-making ",
+    tags: ["Next.js", "SQL", "Tailwind", "Framer","Firebase"],
     imageUrl: wordanalyticsImg,
+    linkToProject:"https://eco-mines.vercel.app/"
   },
 ] as const;
 
