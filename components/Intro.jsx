@@ -86,17 +86,17 @@ export default function Intro() {
         <span
           className="font-bold inline-flex"
           style={{
-            width: "auto", // Let it resize automatically based on word length
-            whiteSpace: "nowrap", // Prevent line breaks
-            textAlign: "left", // Align the text to the left
+            width: "auto", 
+            whiteSpace: "nowrap", 
+            textAlign: "left",
             justifyContent: "flex-start",
           }}
         >
           <FlipWords
             className="!text-white"
             duration={2000}
-            words={words} // Assuming words = ["Full Stack Developer", "Software Engineer", "Designer"]
-            style={{ transition: "transform 0.5s ease", whiteSpace: "nowrap" }} // Prevent word breaking during flip
+            words={words} 
+            style={{ transition: "transform 0.5s ease", whiteSpace: "nowrap" }} 
           />
         </span>{" "}
         based in India. I enjoy building{" "}
@@ -116,7 +116,7 @@ export default function Intro() {
 
         <a
           className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 hover:bg-gray-200 active:scale-105 transition cursor-pointer border border-black/10"
-          href="/SwastikaPradhan2024Resume.pdf"
+          href="/ResumeofSwastikaPradhan.pdf"
           download
 
         >

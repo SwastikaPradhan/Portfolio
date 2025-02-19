@@ -9,16 +9,9 @@ export default function SectionDivider(){
            <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1,y: [0, 20, 0], transition: { duration: 1.5, repeat: Infinity, repeatType: "mirror"} }}
-        className="my-24"
-      >
-
-
+        className="my-24">
              <MdKeyboardDoubleArrowDown className="text-5xl" />
-        
-        
-        
         </motion.div> 
         </div>
-
     );
 }
